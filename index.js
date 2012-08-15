@@ -47,7 +47,7 @@ setInterval(refreshCache, 1000 * 60 * 60 * 2)
 //  + vars = obj
 
 app.get('/', function (req, res) {
-  res.send('Bootstrap Server - w/cache. <3');
+  res.send('Plusstrap Server - w/cache. <3');
 })
 
 app.post('/', function(req, res) {
@@ -70,7 +70,7 @@ app.post('/', function(req, res) {
     for (var i in files) archive.add(i, files[i])
   }
 
-  res.attachment('bootstrap.zip')
+  res.attachment('plusstrap.zip')
   res.send(archive.toBuffer())
 })
 
